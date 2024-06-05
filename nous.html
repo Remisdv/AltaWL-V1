@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos d'ALTA</title>
+    <link rel="icon" type="image/png" href="IMG/alta1.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #030913;
+            color: white;
+        }
+        nav {
+            background-color: #030913;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            height: 60px;
+            margin: 20px 40px;
+        }
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+        }
+        .navbar li {
+            position: relative;
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .navbar a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: width 0.3s;
+            margin: auto;
+        }
+        .navbar a:hover::after {
+            width: 100%;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #1c1c1e;
+            padding-bottom: 10px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        .staff {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .staff .member {
+            background-color: #1c1c1e;
+            border-radius: 10px;
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .staff .member:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .staff .member img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .staff .container {
+            padding: 15px;
+        }
+        .staff h4 {
+            margin: 10px 0;
+            color: white;
+        }
+        .staff p {
+            margin: 10px 0;
+            color: #aaa;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Ajouter le logo à gauche -->
+        <img src="IMG/alta1.png" alt="Logo ALTA" class="logo">
+        <ul class="navbar">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a_propos.html">À propos d'ALTA</a></li>
+            <li><a href="https://docs.google.com/document/d/1fidOubvW5WF3yXgau2iOYBIwCYTUQaXvrGPf7-8Ryn4/edit">Règlement</a></li>
+            <li><a href="https://top-serveurs.net/gta/alta-rp">Vote</a></li>
+            <li><a href="#discord">Discord</a></li>
+            <li><a href="#douane">Douane</a></li>
+            <li><a href="#connexion">Connexion</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section class="section">
+            <h2>Notre Mentalité</h2>
+            <p>
+                Chez ALTA RP, nous croyons en une expérience de jeu immersive et respectueuse. Notre priorité est de créer un environnement où les joueurs peuvent s'immerger pleinement dans leurs rôles, tout en respectant les règles et en maintenant un comportement positif et respectueux envers les autres membres de la communauté.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Notre Équipe</h2>
+            <p>
+                Notre équipe est composée de passionnés de RP qui sont dévoués à offrir la meilleure expérience possible à tous les joueurs. Nous sommes là pour vous aider, répondre à vos questions et assurer que tout se déroule sans accroc sur le serveur. Nous valorisons l'entraide, le respect et l'engagement dans tout ce que nous faisons.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Équipe du Staff</h2>
+            <div class="staff">
+                <div class="member">
+                    <img src="images/staff1.jpg" alt="Staff Member 1">
+                    <div class="container">
+                        <h4><b>Nom du Staff 1</b></h4>
+                        <p>Rôle du Staff</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="images/staff2.jpg" alt="Staff Member 2">
+                    <div class="container">
+                        <h4><b>Nom du Staff 2</b></h4>
+                        <p>Rôle du Staff</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="images/staff3.jpg" alt="Staff Member 3">
+                    <div class="container">
+                        <h4><b>Nom du Staff 3</b></h4>
+                        <p>Rôle du Staff</p>
+                    </div>
+                </div>
+                <!-- Add more staff members as needed -->
+            </div>
+        </section>
+        <section class="section">
+            <h2>Galerie</h2>
+            <div class="images">
+                <img src="images/gallery1.jpg" alt="Image 1">
+                <img src="images/gallery2.jpg" alt="Image 2">
+                <img src="images/gallery3.jpg" alt="Image 3">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>

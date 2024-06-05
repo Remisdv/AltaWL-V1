@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(3,9,19,255);
+}
+
+nav {
+    background-color: rgba(3,9,19,255);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Ajustez la hauteur selon vos besoins */
+    margin: 20px 40px; /* Ajoutez un peu d'espace autour du logo */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    /* se met au millieu de la page */
+    margin: auto;
+    flex-grow: 1; /* Permet à la liste de prendre tout l'espace disponible */
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    margin: auto;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.banner {
+    padding: 100px 0;
+    font-size: 25px;
+    display: flex; /* Ajouté */
+    flex-direction: column; /* Ajouté */
+    justify-content: center; /* Ajouté */
+    align-items: center; /* Ajouté */
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+.banner img {
+    width: 50%;
+    height: 100%;
+}
+
+.banner p {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.banner .button-container {
+    display: flex; /* Ajouté */
+    gap: 20px; /* Ajouté pour espace entre les boutons */
+    justify-content: center; /* Ajouté */
+    align-items: center; /* Ajouté */
+    margin-top: 20px; /* Ajouté pour espacement avec le texte */
+}
+
+.button-discord, .button-douane {
+    margin-top: 20px;
+    /* margin-left: 150px; Supprimé */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #7289da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Ajout de la transition pour l'animation */
+    text-decoration: none; /* Pour enlever le soulignement */
+    display: inline-block; /* Pour agir comme un bouton */
+    width: 200px;
+}
+
+.button-discord:hover, .button-douane:hover {
+    background-color: #5b6eae;
+    transform: scale(1.1); /* Ajout de l'animation au survol */
+}
